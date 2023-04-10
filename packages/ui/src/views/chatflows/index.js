@@ -22,6 +22,9 @@ import useApi from 'hooks/useApi'
 // const
 import { baseURL } from 'store/constant'
 
+// icons
+import { IconPlus } from '@tabler/icons'
+
 // ==============================|| CHATFLOWS ||============================== //
 
 const Chatflows = () => {
@@ -83,7 +86,7 @@ const Chatflows = () => {
                 <Grid sx={{ mb: 1.25 }} container direction='row'>
                     <Box sx={{ flexGrow: 1 }} />
                     <Grid item>
-                        <StyledButton variant='contained' sx={{ color: 'white' }} onClick={addNew}>
+                        <StyledButton variant='contained' sx={{ color: 'white' }} onClick={addNew} startIcon={<IconPlus />}>
                             Add New
                         </StyledButton>
                     </Grid>
