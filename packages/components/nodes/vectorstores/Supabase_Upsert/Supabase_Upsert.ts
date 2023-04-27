@@ -19,7 +19,7 @@ class SupabaseUpsert_VectorStores implements INode {
     constructor() {
         this.label = 'Supabase Upsert Document'
         this.name = 'supabaseUpsert'
-        this.type = 'supabase'
+        this.type = 'Supabase'
         this.icon = 'supabase.svg'
         this.category = 'Vector Stores'
         this.description = 'Upsert documents to Supabase'
