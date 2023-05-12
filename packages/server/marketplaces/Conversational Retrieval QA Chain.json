@@ -82,6 +82,14 @@
                         "type": "file",
                         "fileType": ".txt",
                         "id": "textFile_1-input-txtFile-file"
+                    },
+                    {
+                        "label": "Metadata",
+                        "name": "metadata",
+                        "type": "json",
+                        "optional": true,
+                        "additionalParams": true,
+                        "id": "textFile_1-input-metadata-json"
                     }
                 ],
                 "inputAnchors": [
