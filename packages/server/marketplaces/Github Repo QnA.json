@@ -150,6 +150,14 @@
                         "placeholder": "<GITHUB_ACCESS_TOKEN>",
                         "optional": true,
                         "id": "github_1-input-accessToken-password"
+                    },
+                    {
+                        "label": "Metadata",
+                        "name": "metadata",
+                        "type": "json",
+                        "optional": true,
+                        "additionalParams": true,
+                        "id": "github_1-input-metadata-json"
                     }
                 ],
                 "inputAnchors": [
