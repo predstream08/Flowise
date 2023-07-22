@@ -9,13 +9,7 @@ export async function LoadPyodide(): Promise<PyodideInterface> {
         const { loadPyodide } = await import('pyodide')
         const obj: any = { packageCacheDir: path.join(getUserHome(), '.flowise', 'pyodideCacheDir') }
         pyodideInstance = await loadPyodide(obj)
-        await pyodideInstance.loadPackage('micropip')
-        const micropip = pyodideInstance.pyimport('micropip')
-        await micropip.install('pandas')
-        await micropip.install('numpy')
-        //let mountDir = "/mnt";
-        //pyodideInstance.FS.mkdir(mountDir);
-        //pyodideInstance.FS.mount(pyodideInstance.FS.filesystems.NODEFS, { root: path.join(getUserHome(), '.flowise', 'pyodideFS') }, mountDir);
+        await pyodideInstance.loadPackage(['pandas', 'numpy'])
     }
 
     return pyodideInstance
