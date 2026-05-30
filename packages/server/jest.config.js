@@ -33,4 +33,4 @@ module.exports = {
 
     // Display individual test results with the test suite hierarchy.
     verbose: true
-}
+};

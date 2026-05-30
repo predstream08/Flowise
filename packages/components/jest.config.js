@@ -23,4 +23,4 @@ module.exports = {
         // Tests don't exercise Azure storage, so stubbing it out avoids the chain entirely.
         '^multer-azure-blob-storage$': '<rootDir>/__mocks__/esm-stub.js'
     }
-}
+};
